@@ -124,12 +124,12 @@
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click_1;
             // 
-            // Form1
+            // SimpleCalc
             // 
             AcceptButton = btnCalculate;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            CancelButton = btnCalculate;
+            CancelButton = btnExit;
             ClientSize = new Size(1381, 492);
             Controls.Add(btnExit);
             Controls.Add(btnCalculate);
@@ -141,8 +141,9 @@
             Controls.Add(Operand2);
             Controls.Add(Operator);
             Controls.Add(Operand1);
-            Name = "Form1";
+            Name = "SimpleCalc";
             Text = "Form1";
+            Load += SimpleCalc_Load;
             ResumeLayout(false);
             PerformLayout();
         }
